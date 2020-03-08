@@ -1,0 +1,22 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+agm-map {
+  height: 600px;
+}
+
+agm-info-window {
+  height : 50px;
+  width : 100px;
+}
+
+.parent{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.child{
+  justify-content: center;
+  
+}

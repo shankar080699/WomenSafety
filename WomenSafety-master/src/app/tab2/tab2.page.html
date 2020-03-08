@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Statistics
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Statistics</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <div *ngIf ="api">
+        <ion-list *ngFor="let a of api">
+            <ion-item><p>{{a[1]}}</p><p slot="end">{{a[2]}}</p> </ion-item>
+            
+            
+        </ion-list>
+    </div>
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content>

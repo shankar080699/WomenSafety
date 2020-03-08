@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Maps
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar class="parent">
+      <ion-title class="child" size="large">Maps</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ 
+  <agm-map [latitude]=19.2610 [longitude]=72.8670>
+    <agm-marker [latitude]=19.2809 [longitude]=72.8560>
+        <agm-info-window><h3>Mira Road</h3><h3>Crime Score: 160</h3><h3>Latitude : 19.2809</h3><h3>Longitude : 72.8560</h3></agm-info-window>
+    </agm-marker>
+    <agm-marker [latitude]=19.1483 [longitude]=72.8405>
+      <agm-info-window><h3>Oshiwara</h3><h3>Crime Score: 146</h3><h3>Latitude : 19.1483</h3><h3>Longitude :72.8405</h3></agm-info-window>
+  </agm-marker>
+  <agm-marker [latitude]=18.9649 [longitude]=72.8261>
+    <agm-info-window><h3>Kamatipura </h3><h3>Crime Score: 112</h3><h3>Latitude :18.9649</h3><h3>Longitude : 72.8261</h3></agm-info-window>
+  </agm-marker>
+  <agm-marker [latitude]=19.0546 [longitude]=72.8380>
+    <agm-info-window><h3>Bandra Police Station</h3><h3>Crime Score: 86</h3><h3>Latitude :19.0546</h3><h3>Longitude : 72.8380</h3></agm-info-window>
+  </agm-marker>
+  <agm-marker [latitude]=19.3147 [longitude]= 72.8574>
+    <agm-info-window><h3>Bhayandar Maruti Mandir</h3><h3>Crime Score: 78</h3><h3>Latitude : 19.3147</h3><h3>Longitude :  72.8574</h3></agm-info-window>
+  </agm-marker>
+  </agm-map>
+  <app-explore-container name="Tab 1 page"></app-explore-container>
+</ion-content>
